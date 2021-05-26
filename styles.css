@@ -45,6 +45,10 @@ button:hover {
   border: 2px solid #4ECCA3;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, .2); 
 }
+.pressed {
+  font-size: 1.5rem;
+  box-shadow: none!important;
+}
 
 .link {
   color: #EEEEEE;
