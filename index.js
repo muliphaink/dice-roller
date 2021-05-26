@@ -1,4 +1,7 @@
-document.querySelector("button").onclick = function(){roll()}
+document.querySelector("button").addEventListener("click", function(){
+    roll();
+    changeStyle(this);
+})
 
 function roll() {
 
@@ -27,4 +30,11 @@ function roll() {
         heading.style.margin = "25px";
     }
 
+}
+
+function changeStyle(button) {
+    button.classList.add("pressed");
+    setTimeout(function(){
+        button.classList.remove("pressed");
+    }, 200)   
 }
